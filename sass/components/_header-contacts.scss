@@ -1,0 +1,32 @@
+.header-contacts-list {
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  display: flex;
+}
+
+.header-contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contacts {
+  color: var(--primery-text-color);
+  display: flex;
+  align-items: center;
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  display: flex;
+  align-items: center;
+}

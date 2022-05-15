@@ -1,0 +1,42 @@
+.about {
+  padding-bottom: 0;
+}
+
+.about__list {
+  display: flex;
+}
+
+.about__item {
+  width: 270px;
+}
+
+.about__item + .about__item {
+  margin-left: 30px;
+}
+
+.image {
+  display: flex;
+  height: 120px;
+  width: 270px;
+  background-color: var(--team-section-color);
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.about__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--nav-item-color);
+}
+
+.about__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
