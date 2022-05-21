@@ -1,3 +1,9 @@
+.activity {
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .activity__title {
   margin-bottom: 50px;
 }
