@@ -3,21 +3,28 @@
 }
 
 .about__list {
-  display: flex;
+  // display: flex;
 }
 
 .about__item {
-  width: 270px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &:last-child {
+    margin-bottom: 60px;
+  }
+  // width: 270px;
 }
 
-.about__item + .about__item {
-  margin-left: 30px;
-}
+// .about__item + .about__item {
+//   margin-left: 30px;
+// }
 
 .image {
   display: flex;
   height: 120px;
-  width: 270px;
+  width: 100%;
   background-color: var(--team-section-color);
   align-items: center;
   justify-content: center;
@@ -32,6 +39,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--nav-item-color);
+  text-align: center;
 }
 
 .about__text {
@@ -39,4 +47,8 @@
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+.about__text:not(:last-child) {
+  margin-bottom: 30px;
 }

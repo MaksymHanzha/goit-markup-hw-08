@@ -1,6 +1,11 @@
+.client {
+  padding: 0;
+}
+
 .client__title {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 15px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
@@ -16,16 +21,16 @@
 
 .client__list {
   display: flex;
-  margin-top: 50px;
+  flex-wrap: wrap;
 }
 
-.client__item + .client__item {
-  margin-left: 30px;
+.client__item {
+  margin: 15px;
 }
 
 .client__link {
   display: flex;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--svg-icon-color);
   box-sizing: border-box;
@@ -33,6 +38,14 @@
   justify-content: center;
   align-items: center;
   fill: var(--svg-icon-color);
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 
   transition: border var(--transition-duration) var(--transition-timing-function),
     fill var(--transition-duration) var(--transition-timing-function);
