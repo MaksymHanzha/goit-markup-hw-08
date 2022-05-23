@@ -22,6 +22,10 @@
 .client__list {
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+  }
 }
 
 .client__item {
