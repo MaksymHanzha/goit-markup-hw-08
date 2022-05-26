@@ -1,5 +1,9 @@
 .footer-soc {
-  margin-left: 70px;
+  margin-bottom: 60px;
+
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
 }
 
 .footer-soc-title {
@@ -18,6 +22,10 @@
 }
 
 .footer-soc-list {
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
+
   display: flex;
 }
 

@@ -1,5 +1,11 @@
 .subscribe {
-  margin-left: 93px;
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
+  }
 }
 
 .subscribe-label {
@@ -12,13 +18,17 @@
 }
 
 .subscribe-box {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+
   margin-top: 20px;
 }
 
 .subscribe-input {
-  width: 358px;
+  margin-bottom: 20px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -29,6 +39,14 @@
   display: flex;
   align-items: center;
   color: var(--primery-white-color);
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 
   &::placeholder {
     font-family: 'Roboto';
@@ -47,10 +65,14 @@
 
 .subscribe-icon {
   position: absolute;
-  right: 28px;
+  right: 140px;
   top: 50%;
   transform: translateY(-50%);
   fill: var(--primery-white-color);
+
+  @media screen and (min-width: 1200px) {
+    right: 28px;
+  }
 }
 
 .subscribe-button {
