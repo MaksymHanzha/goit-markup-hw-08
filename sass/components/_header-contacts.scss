@@ -4,11 +4,27 @@
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  display: flex;
+  // display: flex;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
 }
 
 .header-contacts-item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 .header-contacts {

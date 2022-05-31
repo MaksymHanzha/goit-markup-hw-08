@@ -26,6 +26,12 @@ body {
   overflow: hidden;
 }
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .container {
   margin: 0 auto;
   padding-left: 15px;
