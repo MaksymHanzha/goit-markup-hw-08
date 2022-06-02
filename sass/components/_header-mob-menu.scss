@@ -33,8 +33,9 @@
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  &:hover,
   &:focus {
-    fill: #2196f3;
+    fill: var(--accent-color);
   }
 }
 
@@ -54,6 +55,10 @@
   color: var(--nav-item-color);
 }
 
+.mob-menu-list__link.current {
+  color: var(--accent-color);
+}
+
 .mob-menu-list__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -69,6 +74,10 @@
   letter-spacing: 0.02em;
 
   color: var(--accent-color);
+
+  @media screen and (max-width: 480px) {
+    font-size: 27px;
+  }
 }
 
 .mob-address-list__item {
@@ -119,6 +128,10 @@
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
   color: #2196f3;
+
+  @media screen and (max-width: 480px) {
+    font-size: 11px;
+  }
 }
 
 .no-scroll {
